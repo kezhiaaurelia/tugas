@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Home</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo">
+                </div>
+                <div class="nav-right">
+                </div>
+            </nav>
+        </header>
+        </body>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        
+        }
+
+        *{
+            font-family: "Inter", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .scroll-box{
+            display: flex;
+            width: max-content;
+            gap: 10px;
+        }
+
+        .scroll{
+            width: 100%;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+
+        .item{
+            scroll-snap-align: start;
+            width: 180px;
+            aspect-ratio: 11/16;
+        }
+
+        .item img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+
+        .scroll::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 pe-5" type="search" placeholder="What Are You Watching Today?" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleInterval" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="banner1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="banner2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="banner3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h4 class="text-judul">New Film</h4>
+        <hr style="border: 2px solid rgb(0, 0, 116); border-radius: 5px; width: 50px;">
+        <div class="scroll mb-5">
+            <div class="scroll-box">
+                <div class="item">
+                    <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/89/MTA-122153165/no-brand_no-brand_full01.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFA-pukciFLmht29u_mRRmn5Ln88d6jhbLpw&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRzjarsoU3xN9g93oy9qhU8mthPMvh3AMa8Q&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-RBibSpDl2raJcZ_YecoqbpY6WbpqPLh9Ug&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2a2zzjZlXltx6q27BiveGEBFcM0FCoj2n-Q&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh88SiaJtx4To4iLhf7G6MFNuDvmbVHjqd6A&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://cdn.idntimes.com/content-images/community/2018/12/terminator-genesis-d1ff88cc147cbe009ec9bcc8141a918e.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://images-cdn.ubuy.co.id/633fec54d414aa0b7a52d464-wandavision-marvel-tv-show-poster.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://images-cdn.ubuy.co.id/635aa3f5e29f902a352def13-marvel-the-avengers-endgame-movie.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKRIOzyUIwQSLC8t1qH0f1Ho3moqfu0OI1cw&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://piktochart.com/wp-content/uploads/2020/07/Blade-runner-movie-poster-667x1000-6779529.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZa5Miz7C6k7QbUd1ylBSuPXl_9FRY6QpnPg&s" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h4 class="text-judul">Recomended</h4>
+        <hr style="border: 2px solid rgb(0, 0, 116); border-radius: 5px; width: 50px;">
+        <div class="scroll mb-5">
+            <div class="scroll-box">
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZa5Miz7C6k7QbUd1ylBSuPXl_9FRY6QpnPg&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvRFW19GB9TyiMTXmDQChxaXRjnFaXLKeuYw&s">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKRIOzyUIwQSLC8t1qH0f1Ho3moqfu0OI1cw&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/89/MTA-122153165/no-brand_no-brand_full01.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFA-pukciFLmht29u_mRRmn5Ln88d6jhbLpw&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRzjarsoU3xN9g93oy9qhU8mthPMvh3AMa8Q&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-RBibSpDl2raJcZ_YecoqbpY6WbpqPLh9Ug&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2a2zzjZlXltx6q27BiveGEBFcM0FCoj2n-Q&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh88SiaJtx4To4iLhf7G6MFNuDvmbVHjqd6A&s" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://cdn.idntimes.com/content-images/community/2018/12/terminator-genesis-d1ff88cc147cbe009ec9bcc8141a918e.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://images-cdn.ubuy.co.id/633fec54d414aa0b7a52d464-wandavision-marvel-tv-show-poster.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://images-cdn.ubuy.co.id/635aa3f5e29f902a352def13-marvel-the-avengers-endgame-movie.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+      
+          <h5>Netflix</h5>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
+    <footer>
+        <p>&copy; 2024 Netflix, Inc.</p>
+    </footer>
+</body>
+</html>
